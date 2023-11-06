@@ -574,8 +574,8 @@
 	scope_state = "scope_medium"
 	scope_x_offset = 5
 	scope_y_offset = 14
-	can_attachments = TRUE
-	can_automatic = TRUE
+	can_attachments = FALSE
+	can_automatic = FALSE
 	semi_auto = TRUE
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
@@ -584,7 +584,7 @@
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
 
 
-//M1/n Carbine				Keywords: NCR, 10mm, Semi-auto, 12/24 rounds, Long barrel, Damage +1
+//M1/n Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel, Damage +1
 /obj/item/gun/ballistic/automatic/m1carbine/m1n
 	name = "M1/N carbine"
 	desc = "An M1 Carbine with markings identifying it as issued to the NCR Mojave Expedtionary Force. Looks beat up but functional."
@@ -777,7 +777,7 @@
 	fire_delay = 1
 	burst_size = 1
 	spread = 1
-	extra_damage = 30
+	extra_damage = 25
 	extra_penetration = 0.1
 	can_attachments = TRUE
 	automatic_burst_overlay = FALSE
@@ -876,7 +876,7 @@
 //Colt Rangemaster				Keywords:5.56/.223, Semi-auto, 10 round magazine, 30dmg
 /obj/item/gun/ballistic/automatic/rangemaster
 	name = "Colt Rangemaster"
-	desc = "A Colt Rangemaster semi-automatic rifle, chambered for 7.62x51. Single-shot only."
+	desc = "A Colt Rangemaster semi-automatic hunting rifle, chambered for .223 rounds. Single-shot only."
 	icon_state = "rangemaster"
 	item_state = "308"
 	icon_prefix = "308"
@@ -1228,7 +1228,7 @@
 	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
 
 
-//Assault Carbine				Keywords: 5mm, Automatic, 30 round magazine, Flashlight, 20dmg/0.25AP
+//Assault Carbine				Keywords: 5mm, Automatic, 30 round magazine, Flashlight, 16dmg/0.1AP (80 DPS)
 /obj/item/gun/ballistic/automatic/assault_carbine
 	name = "assault carbine"
 	desc = "The U.S. army carbine version of the R91, made by Colt and issued to special forces."
@@ -1242,11 +1242,11 @@
 	is_automatic = TRUE
 	automatic = 1
 	autofire_shot_delay = 2
-	extra_damage = 19
-	extra_penetration = 0.25
+	extra_damage = 16
+	extra_penetration = 0.1
 	spread = 10 //high-velocity
 	can_attachments = TRUE
-	can_scope = TRUE
+	can_scope = FALSE
 	scope_state = "scope_short"
 	scope_x_offset = 4
 	scope_y_offset = 15
@@ -1280,9 +1280,9 @@
 	icon_state = "assault_carbine"
 	fire_delay = 3.5
 	burst_shot_delay = 2.2
-	spread = 14
-	extra_damage = 18
-	extra_penetration = 0.12
+	spread = 20
+	extra_damage = 15
+
 //FN-FAL				Keywords: 7.62mm, Automatic, 10/20 round magazine
 /obj/item/gun/ballistic/automatic/fnfal
 	name = "FN FAL"

@@ -498,6 +498,13 @@
 	item_color = "colonelrank"
 	minimize_when_attached = TRUE
 
+/obj/item/clothing/accessory/ncr/MAJ
+	name = "(O-4) Major rank pin"
+	desc = "An officer holding the rank of Major should wear this."
+	icon_state = "majorrank"
+	item_color = "majorrank"
+	minimize_when_attached = TRUE
+
 /obj/item/clothing/accessory/ncr/CPT
 	name = "(O-3) Captain rank pin"
 	desc = "An officer holding the rank of Captain should wear this."
@@ -519,20 +526,19 @@
 	item_color = "secondlieutenantrank"
 	minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/ncr/SGT
-	name = "(E-5) Sergeant rank pins"
-	desc = "A trooper holding the rank of Sergeant should wear this."
+/obj/item/clothing/accessory/ncr/SSGT
+	name = "(E-6) Staff Sergeant rank pins"
+	desc = "A Staff Sergeant should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
 
-/obj/item/clothing/accessory/armband/engine/ncr
-	name = "Engineering Personnel armband (E-4 Engineer)"
-	desc = "An armband worn by NCR Engineers to display their rank and speciality. This one is orange with a reflective strip!"
-
-/obj/item/clothing/accessory/armband/med/ncr
-	name = "Medical Personnel armband (E-4 Medic)"
-	desc = "An armband worn by NCR Medics to display their rank and speciality. This one is white."
+/obj/item/clothing/accessory/ncr/SGT
+	name = "(E-5) Sergeant rank pins"
+	desc = "A Sergeant should wear this."
+	icon_state = "ncrenlisted"
+	item_color = "ncrenlisted"
+	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/armband/black
 	name = "Military Police armband"
@@ -547,16 +553,23 @@
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
 
+/obj/item/clothing/accessory/ncr/SPC
+	name = "(E-4) Specialist rank pins"
+	desc = "A Specialist should wear this."
+	icon_state = "ncrenlisted"
+	item_color = "ncrenlisted"
+	minimize_when_attached = TRUE
+
 /obj/item/clothing/accessory/ncr/TPR
 	name = "(E-3) Private First Class rank pins"
-	desc = "A trooper should wear this."
+	desc = "A PFC should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE
 
 /obj/item/clothing/accessory/ncr/REC
 	name = "(E-2) Private rank pins"
-	desc = "A conscript should wear this."
+	desc = "A Private should wear this."
 	icon_state = "ncrenlisted"
 	item_color = "ncrenlisted"
 	minimize_when_attached = TRUE

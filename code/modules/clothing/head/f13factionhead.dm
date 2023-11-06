@@ -320,6 +320,8 @@
 /obj/item/clothing/head/helmet/f13/legion/marsheaddress
 	name = "priestess' headdress"
 	desc = "A headdress made of feathers and decorated with two golden tassles."
+	icon = 'icons/fallout/clothing/hats.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-priestess"
 	item_state = "legion-priestess"
 	dynamic_hair_suffix = "+generic"
@@ -429,7 +431,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-decvet"
 	item_state = "legion-decvet"
-	armor = list("melee" = 50, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
+	armor = list("melee" = 50, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 35, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0, "wound" = 50)
 	actions_types = list(/datum/action/item_action/toggle)
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 2)
 
@@ -508,7 +510,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/head.dmi'
 	icon_state = "legion-heavy"
 	item_state = "legion-heavy"
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 40, "energy" = 35, "bomb" = 35, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 0, "wound" = 75)
+	armor = list("melee" = 60, "bullet" = 65, "laser" = 55, "energy" = 15, "bomb" = 40, "bio" = 55, "rad" = 25, "fire" = 55, "acid" = 15, "wound" = 30)
 
 /obj/item/clothing/head/helmet/f13/combat/legion
 	name = "Legion combat helmet"
@@ -720,14 +722,21 @@
 	desc = "A tan peaked cap with silver pin, designated for enlisted NCRA personnel."
 	icon_state = "ncr_dresscap"
 	item_state = "ncr_dresscap"
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 0)
 
 /obj/item/clothing/head/beret/ncr_codresscap
 	name = "NCR peaked cap"
 	desc = "A tan peaked cap with golden pin, designated for commissioned NCRA personnel."
 	icon_state = "ncr_codresscap"
 	item_state = "ncr_codresscap"
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 9, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 0)
+
+/obj/item/clothing/head/f13/ncr/ncr_pith_helmet
+	name = "NCR pith helmet"
+	desc = "A soft helmet made out of pressed plant material. Probably won't stop bullets."
+	icon_state = "ncr_flapcap"
+	item_state = "ncr_flapcap"
+	armor = list("melee" = 15, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 0)
 
 //NCR Ranger
 

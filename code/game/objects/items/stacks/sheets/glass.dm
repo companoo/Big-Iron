@@ -96,8 +96,8 @@ GLOBAL_LIST_INIT(glass_recipes, list ( \
 
 
 GLOBAL_LIST_INIT(pglass_recipes, list ( \
-	new/datum/stack_recipe("directional window", /obj/structure/window/plasma/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile window", /obj/structure/window/plasma/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE) \
+	new/datum/stack_recipe("directional window", /obj/structure/window/plasma/unanchored, time = 30, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("fulltile window", /obj/structure/window/plasma/fulltile/unanchored, 2, time = 30, on_floor = TRUE, window_checks = TRUE) \
 ))
 
 /obj/item/stack/sheet/plasmaglass
@@ -150,8 +150,8 @@ GLOBAL_LIST_INIT(pglass_recipes, list ( \
 GLOBAL_LIST_INIT(reinforced_glass_recipes, list ( \
 	new/datum/stack_recipe("windoor frame", /obj/structure/windoor_assembly, 5, time = 0, on_floor = TRUE, window_checks = TRUE), \
 	null, \
-	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/reinforced/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/reinforced/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE) \
+	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/reinforced/unanchored, time = 30, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/reinforced/fulltile/unanchored, 2, time = 30, on_floor = TRUE, window_checks = TRUE) \
 ))
 
 
@@ -200,8 +200,8 @@ GLOBAL_LIST_INIT(reinforced_glass_recipes, list ( \
 	. += GLOB.reinforced_glass_recipes
 
 GLOBAL_LIST_INIT(prglass_recipes, list ( \
-	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/plasma/reinforced/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/plasma/reinforced/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE) \
+	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/plasma/reinforced/unanchored, time = 30, on_floor = TRUE, window_checks = TRUE), \
+	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/plasma/reinforced/fulltile/unanchored, 2, time = 30, on_floor = TRUE, window_checks = TRUE) \
 ))
 
 /obj/item/stack/sheet/plasmarglass
@@ -227,7 +227,7 @@ GLOBAL_LIST_INIT(prglass_recipes, list ( \
 	S.efficiency *= 1.2
 
 GLOBAL_LIST_INIT(titaniumglass_recipes, list(
-	new/datum/stack_recipe("shuttle window", /obj/structure/window/shuttle/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE)
+	new/datum/stack_recipe("shuttle window", /obj/structure/window/shuttle/unanchored, 2, time = 30, on_floor = TRUE, window_checks = TRUE)
 	))
 
 /obj/item/stack/sheet/titaniumglass
@@ -251,7 +251,7 @@ GLOBAL_LIST_INIT(titaniumglass_recipes, list(
 	S.efficiency *= 1.5
 
 GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
-	new/datum/stack_recipe("plastitanium window", /obj/structure/window/plastitanium/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE)
+	new/datum/stack_recipe("plastitanium window", /obj/structure/window/plastitanium/unanchored, 2, time = 30, on_floor = TRUE, window_checks = TRUE)
 	))
 
 /obj/item/stack/sheet/plastitaniumglass
@@ -363,14 +363,14 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 /obj/item/shard/welder_act(mob/living/user, obj/item/I)
 	..()
 	if(I.use_tool(src, user, 0, volume=50))
-		var/obj/item/stack/sheet/glass/NG = new (user.loc)
-		for(var/obj/item/stack/sheet/glass/G in user.loc)
+		new /obj/item/stack/sheet/glass (user.loc)
+/*		for(var/obj/item/stack/sheet/glass/G in user.loc)
 			if(G == NG)
 				continue
 			if(G.amount >= G.max_amount)
 				continue
 			G.attackby(NG, user)
-		to_chat(user, "<span class='notice'>You add the newly-formed glass to the stack. It now contains [NG.amount] sheet\s.</span>")
+		to_chat(user, "<span class='notice'>You add the newly-formed glass to the stack. It now contains [NG.amount] sheet\s.</span>")*/
 		qdel(src)
 	return TRUE
 

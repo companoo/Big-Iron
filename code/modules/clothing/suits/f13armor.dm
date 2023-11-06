@@ -41,13 +41,12 @@
 	desc = "A combat leather jacket, outfitted with a special armored leather coat."
 	armor = list("melee" = 35, "bullet" = 22, "laser" = 22, "energy" = 15, "bomb" = 45, "bio" = 30, "rad" = 5, "fire" = 50, "acid" = 35, "wound" = 35)
 
-
 /obj/item/clothing/suit/armor/f13/kit
 	name = "armor kit"
 	desc = "Separate armor parts you can wear over the clothing to get the most basic protection from the dangers of wasteland.<br>It sure is better than going into the battle without any armor at all."
 	icon_state = "armorkit"
 	item_state = "armorkit"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0, "wound" = 30)
+	armor = list("melee" = 10, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0, "wound" = 0)
 	strip_delay = 30
 	slowdown = 0.025
 
@@ -96,7 +95,6 @@
 	desc = "An enhanced version of the basic leather armor with extra layers of protection. Finely crafted from tanned brahmin hide."
 	armor = list("melee" = 37, "bullet" = 22, "laser" = 37, "energy" = 27, "bomb" = 35, "bio" = 0, "rad" = 15, "fire" = 40, "acid" = 35, "wound" = 35)
 	slowdown = 0.08
-
 
 /obj/item/clothing/suit/armor/f13/metalarmor
 	name = "metal armor"
@@ -197,7 +195,7 @@
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "combat_armor_mk2"
 	item_state = "combat_armor_mk2"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 55)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 55, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20, "wound" = 55)
 	slowdown = 0.15
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 8)
 
@@ -658,7 +656,6 @@
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 30)
 	salvaged_type = /obj/item/clothing/suit/armored/heavy/salvaged_pa/t60
 
-
 /obj/item/clothing/suit/armor/f13/power_armor/excavator
 	name = "excavator power armor"
 	desc = "Developed by Garrahan Mining Co. in collaboration with West Tek, the Excavator-class power armor was designed to protect miners from rockfalls and airborne contaminants while increasing the speed at which they could work. "
@@ -675,6 +672,11 @@
 	slowdown = 0.75
 	armor = list("melee" = 80, "bullet" = 80, "laser" = 85, "energy" = 35, "bomb" = 72, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 50, "wound" = 90)
 
+/obj/item/clothing/suit/armor/f13/power_armor/t51green/enclave
+	name = "advanced power armor mk2"
+	desc = "A mass-produced version of the original APA. It sports less plating, but is easier to repair and maintain."
+	icon_state = "PA_x02"
+	item_state = "PA_x02"
 
 //Peacekeeper armor adjust as needed
 /obj/item/clothing/suit/armor/f13/power_armor/x02
